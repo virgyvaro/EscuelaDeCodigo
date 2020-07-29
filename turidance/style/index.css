@@ -1,0 +1,61 @@
+.container{
+    /* Siempre es importante poner el display con el valor flex */
+    display: flex;
+    /* Distribución y posicionamiento de los elementos internos y se posicionan de arriba hacia abajo */
+    /* Sirve para distribuir las cajas*/
+    justify-content: space-evenly;
+}
+
+/* a = Propiedad que hace referencia al enlace y está puest en subclase con".caja-flex" */
+.caja-flex a{
+    text-align: center;
+    color: indigo;
+    font-family: "Pacifico";
+    font-size: large;    
+}
+
+/* subclases o subselectores :hover = flotar encima */
+a:hover{
+    color: Blue;
+    font-size: 25px;
+}
+
+img{
+    /* Propiedad que nos da el redondear las esquinas de un elemento */
+    border-radius: 10px;
+    /* Propiedad que sirve para darle un marco(grosor) al contenido con algún color. */
+    border: 3px solid indigo;
+    /* Propiedad que nos indica el ancho del elemento sobre pantalla */
+    width: 60%;
+    /* Propiedad que nos indica el largo del elemento sobre pantalla */
+    height: 360px;
+    /* Propiedad que nos sirve para posicionar el margen de la izquierda del elemento. */
+    margin-left: 255px;
+}
+
+.slogan{
+    border-radius: 15px;
+    border: 5px solid yellow;
+    /* Propiedad que nos sirve para darle un espacio en blanco al rededor del elemento */
+    /* Es un margen interno */
+    padding: 10px;
+    font-size: large;
+    color: indigo;
+    text-align: center;
+    margin-left: 23.5%;
+    background-color: LightCyan;
+    width: 50%;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+h3{
+    font-size: x-large;
+    color:yellow;
+    text-shadow: 2px 5px SaddleBrown;
+}
+
+.parrafo{
+    text-align: center;
+    color: Seashell;
+    font-size: larger;
+}

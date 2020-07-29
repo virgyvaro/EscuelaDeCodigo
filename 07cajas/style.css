@@ -1,0 +1,101 @@
+body{
+    background-color: darkorchid;
+}
+
+.titulo{
+    background-color: darkturquoise;
+    color: blue;
+    width: 60%;
+    margin-left: 20%;
+    padding: 10px;
+    text-align: center;
+    border: 10px solid pink;
+    border-radius: 15px;
+    /* espacio entre letras */
+    letter-spacing: 10px;
+}
+
+.ref{
+    border: 1px solid beige;
+}
+
+/* Esto equivale a lo que es la clase ".ref" */
+/* p, h3{
+    border: 10px dotted pink;
+} */
+
+.caja{
+    border: 20px solid cyan;
+    text-align: center;
+    /* para interfaz de una pc o pantalla grande
+    width: 30%; */
+    
+    /* para interfaz de celulares o equipo movil */
+    width: 25vw;
+    height: 10vh; 
+    /* Estaba en 30vh */
+    /* Se ajusta al tamaño de lo que se escriba dentro de la caja 
+    height: auto;*/
+    
+    /* Flota a la izquierda del ultimo elemento */
+    /* En nuestro ejercicio sería h3 el último elemnto */
+    float: left;
+    
+    /* Para separar las cajas entre sí */
+    margin-left: 2vw;
+
+    /* Este margen se puso para despegar las cajas flex de las cajas float */
+    margin-bottom: 10px;
+}
+
+/* Clases para cajas de flexbox */
+
+.principal{
+    /* Borra todo el estilo de las cajas flotantes */
+    clear: both;
+    border: 2px solid magenta;
+    /* Siempre es importante poner el display con el valor flex */
+    display: flex;
+    /* distribución y posicionamiento de los elementos internos y se posicionan de arriba hacia abajo */
+    /*sirve para distribuir cajas*/
+    justify-content: center;
+}
+
+.caja-flex{
+    border: 1px dashed yellowgreen;
+    text-align: center;
+    padding: 10px;;
+}
+
+/* A partir de aquí es el código que yo hice para hacer la práctica de las demás cajas de ejemplo */
+
+.subtitulo{
+    color: yellow;
+}
+
+.contenedor{
+    border: 2px dotted cyan;
+    display:flex;
+    justify-content: space-between;
+}
+
+.box{
+    border: 2px solid blue;
+    text-align: center;
+    padding: 10px;
+}
+
+.conteiner{
+    border: 2px solid red;
+    background-color: yellowgreen;
+    display:flex;
+    justify-content: space-around;
+}
+
+.cajita{
+    border: 2px dashed brown;
+    text-align: right;
+    padding: 10px;
+}
+
+

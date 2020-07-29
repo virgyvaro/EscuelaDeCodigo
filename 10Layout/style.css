@@ -1,0 +1,79 @@
+body{
+    background-color: burlywood;
+}
+
+.titule{
+    color:brown;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    /* text-align: center; */
+    margin-right: 80%;
+    width: 50%;
+    border: 3px dashed chocolate;
+    background-color: bisque;
+    letter-spacing: 5px;
+    border-top-right-radius: 30px;
+    border-bottom: 5px solid darkblue;
+}
+
+/* Esta puede ser una opción pero es incorrecta */
+/* header = Es el encabezado y en el va el nombre de la empresa, logo del productto */
+/* .header{
+    border: 2px solid coral;
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+} */
+
+/* id = es único e irrepetible */
+/* Esta es la forma correcta de poner el header */
+#header{
+    border: 2px solid coral;
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+}
+
+/* nav(anclaje) = Es para la navegación con "url"  */
+nav{
+    border: 2px solid greenyellow;
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+}
+
+#main{
+    border: 2px dotted cyan;
+    display: flex;
+}
+
+/* aside = es el apartado */
+#aside{
+    border: 2px solid violet;
+    width: 40vw;
+    /* viewport height */
+    height: 60vh;
+    text-align: center;
+    /* Esto es incorrecto */
+    /* margin-left: 57.5vw; */
+    /*  float = No es tan recomendable por el desface de los elementos */
+    /* float: right; */
+}
+
+#section{
+    border: 2px solid yellow;
+    width: 60vw;
+    height: 30vh;
+}
+
+#article{
+    border: 2px solid blue;
+    width: 60vw;
+    height: 30vh;
+}
+
+#footer{
+    border: 2px solid red;
+    width: 100vw;
+    height: 20vh;
+
+}

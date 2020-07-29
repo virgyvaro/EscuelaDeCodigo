@@ -1,0 +1,63 @@
+body{
+    background-image: url("https://image.freepik.com/vector-gratis/cielo-estelar-fondo-acuarela_125540-28.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.titulo{
+    text-align: left;
+    color: aqua;
+    font-size: 50px;
+    text-shadow: 3px 3px 3px blue;
+    font-family: "Galada", "cursive";
+    
+}
+
+.slogan{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: yellow;
+    border: 3px dotted lightyellow;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: 25%;
+    padding: 5px;
+}
+
+.cajas{
+    text-align: center;
+    width: 25%;
+    /* flota a la izquierda del utlimo elemento*/
+    float: left; 
+    height: 300px;
+    margin-left: 3%;
+    margin-right: 5%;
+    padding-top: 25px;
+}
+
+img{
+    width: 250px;
+    height: 150px;
+    border-radius: 15px;
+} 
+
+.combo{
+    text-align: center;
+    font-family: "Oswald", "sans-serif";
+    color: yellow;
+    border: 2px;
+    padding: 5px;
+    margin-top: 2px;
+    margin-left: 5px;
+    font-size: large;
+}
+
+a{
+    color: aquamarine;
+    font-size: 25px;
+} 
+
+a:hover{
+    color:Darkblue;
+    font-size: 30px;
+}

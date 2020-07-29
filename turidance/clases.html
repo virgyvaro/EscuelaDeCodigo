@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/clases.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Pacifico&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-image: url("https://cdn.pixabay.com/photo/2016/10/15/02/19/purple-1741713_960_720.jpg");
+            background-size: cover;
+        }
+
+        .titulo {
+            /* Propiedad que sirve para el tamaño del texto */
+            font-size: x-large;
+            color: yellow;
+            text-shadow: 2px 5px SaddleBrown;
+            font-family: "Merienda One";
+            /* Propiedad que sirve para la alineación del texto */
+            text-align: center;
+        }
+    </style>
+    <title>Clases</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo"> <big>Clases</big></h1>
+    </header>
+
+    <div class="container">
+
+        <div class="caja-flex">
+            <p>
+                <a href="index.html">Inicio</a>
+            </p>
+        </div>
+
+        <div class="caja-flex">
+            <p>
+                <a href="index.html#somos">¿Quiénes Somos?</a>
+            </p>
+        </div>
+
+        <div class="caja-flex">
+            <p>
+                <a href="galeria.html">Galeria</a>
+            </p>
+        </div>
+
+        <div class="caja-flex">
+            <p>
+                <a href="contacto.html">Contacto</a>
+            </p>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="imagenes">
+        <div class="img-flex">
+            <p>
+                <!-- Imagen externa (localizada en la web) -->
+                <img src="https://asisebaila.com/wp-content/uploads/2017/08/bailar-bachata.jpg" alt="Bachata">
+                <br>
+                Bachata
+            </p>
+        </div>
+
+        <div class="img-flex">
+            <p>
+                <img src="img/twerk.jpg" alt="Twerk">
+                <br>
+                Twerk
+            </p>
+        </div>
+
+        <div class="img-flex">
+            <p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRFCSE95C5jQ8jgI5Qz3DGdBI6_pj3wCDdz-A&usqp=CAU"
+                    alt="Zumba">
+                <br>
+                Zumba
+            </p>
+        </div>
+    </div>
+
+    <div class="imagenes">
+        <div class="img-flex">
+            <p>
+                <img src="img/reggaeton.jpg" alt="Reggaeton">
+                <br>
+                Raggaetón
+            </p>
+        </div>
+
+        <div class="img-flex">
+            <p>
+                <img src="img/merengue.jpg" alt="Merengue">
+                <br>
+                Merengue
+            </p>
+        </div>
+
+        <div class="img-flex">
+            <p>
+                <img src="https://i.pinimg.com/736x/77/5d/84/775d8408badff89fc622377480dd0eec.jpg" alt="Danza Arabe">
+                <br>
+                Danza Árabe
+            </p>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <p class="parrafo" style="text-align: justify;">Contamos con una extensa variedad de clases para ti: </p>
+
+    <!-- ul = Lista desordenada = os sirven para mostrar los elementos sin ningún tipo de orden, simplemente precedidos por una viñeta que puede ser un punto, un cuadrado,… -->
+    <!-- Estilo en línea -->
+    <ul style="color: Orange;">
+        <!-- li = Sirve para representar elementos dentro de las listas. -->
+        <li>Zumba</li>
+        <li>Salsa</li>
+        <li>Bachata</li>
+        <li>Twerk</li>
+        <li>Danza Árabe</li>
+        <li>Hip Hop</li>
+        <li>Merengue</li>
+        <li>Reggaetón</li>
+        <li>Salsa Cubana</li>
+        <li>Rock&Roll</li>
+        <li>Tango</li>
+    </ul>
+
+    <br>
+
+    <h2> <strong><u>HORARIO</u></strong> </h2>
+    <p><a href="clases.html">Regresar al inicio</a></p>
+
+    <!-- Creación de una tabla de contenido de información -->
+    <table>
+        <thead>
+            <!-- Representa la sección de encabezado de la tabla. -->
+        </thead>
+
+        <!-- tr = Representa una fila(row). Puede ser declarado como hijo de tbody, thead, tfoot o table. -->
+        <tr>
+            <!-- th = Representa a una celda de encabezado. Sólo puede ser declarado como hijo de tr. -->
+            <th class="tdth">Hora</th>
+            <th class="tdth">Lunes</th>
+            <th class="tdth">Martes</th>
+            <th class="tdth">Miércoles</th>
+            <th class="tdth">Jueves</th>
+            <th class="tdth">Viernes</th>
+            <th class="tdth">Sábado</th>
+        </tr>
+
+        <tr>
+            <!-- td = Representa una columna(column). -->
+            <td class="tdth">7-8</td>
+            <td>Zumba</td>
+            <td>--</td>
+            <td>Zumba</td>
+            <td>--</td>
+            <td>Zumba</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td class="tdth">8-9</td>
+            <td>Danza Árabe</td>
+            <td>Twerk</td>
+            <td>Bachata</td>
+            <td>Hip Hop</td>
+            <td>Twerk</td>
+            <td>Zumba</td>
+        </tr>
+        <tr>
+            <td class="tdth">9-10</td>
+            <td>Merengue</td>
+            <td>Salsa</td>
+            <td>--</td>
+            <td>Zumba</td>
+            <td>Danza Árabe</td>
+            <td>Bachata</td>
+        </tr>
+        <tr>
+            <td class="tdth">10-11</td>
+            <td>--</td>
+            <td>Salsa Cubana</td>
+            <td>Zumba</td>
+            <td>Hip Hop</td>
+            <td>Bachata</td>
+            <td>Twerk</td>
+        </tr>
+        <tr>
+            <td class="tdth">11-12</td>
+            <td>Rock&Roll</td>
+            <td>Tango</td>
+            <td>Salsa</td>
+            <td>Reggaetón</td>
+            <td>--</td>
+            <td>Reggaetón</td>
+        </tr>
+        <tr>
+            <td class="tdth">16-17</td>
+            <td>Hip Hop</td>
+            <td>Danza Árabe</td>
+            <td>Rock&Roll</td>
+            <td>Merengue</td>
+            <td>Salsa Cubana</td>
+            <td>Salsa</td>
+        </tr>
+        <tr>
+            <td class="tdth">17-18</td>
+            <td>Twerk</td>
+            <td>--</td>
+            <td>Tango</td>
+            <td>--</td>
+            <td>Merengue</td>
+        </tr>
+        <tr>
+            <td class="tdth">18-19</td>
+            <td>Zumba</td>
+            <td>Bachata</td>
+            <td>Danza Árabe</td>
+            <td>Tango</td>
+            <td>Zumba</td>
+        </tr>
+        <tr>
+            <td class="tdth">19-20</td>
+            <td>Salsa</td>
+            <td>Hip Hop</td>
+            <td>Zumba</td>
+            <td>Tango</td>
+            <td>Twerk</td>
+        </tr>
+
+    </table>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+body{
+    /* Propiedad para poner el color de fondo */
+    background-color: cornflowerblue;
+}
+
+.titulo{
+    color: darkblue;
+    border: 5px dotted yellow;
+    text-align: center;
+    margin-left: 25%;
+    width: 50%;
+    border-radius: 10px;
+}
+/* 
+video{
+    /* El width se le puso en línea en el html */
+    /* width: 100%; */
+    /* Van de 0 a 1, siendo 0 obscuro y 1 luz
+    opacity: .5;
+} */

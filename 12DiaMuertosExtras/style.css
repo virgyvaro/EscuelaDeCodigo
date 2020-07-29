@@ -1,0 +1,222 @@
+/* PALETA DE COLORES */
+/* Color Theme Swatches in Hex */
+/* ctl + d selección múltiple con referencia */
+.color-1-hex { color: #241E26; }
+.color-2-hex { color: #34BFA6; }
+.color-3-hex { color: #F29441; }
+.color-4-hex { color: #F27649; }
+.color-5-hex { color: #D94E41; }
+
+/* Color Theme Swatches in RGBA */
+.color-1-rgba { color: rgba(35, 29, 38, 1); }
+.color-2-rgba { color: rgba(51, 191, 165, 1); }
+.color-3-rgba { color: rgba(242, 147, 65, 1); }
+.color-4-rgba { color: rgba(242, 117, 72, 1); }
+.color-5-rgba { color: rgba(216, 77, 65, 1); }
+
+/* Color Theme Swatches in HSLA */
+.color-1-hsla { color: hsla(281, 12, 13, 1); }
+.color-2-hsla { color: hsla(168, 57, 47, 1); }
+.color-3-hsla { color: hsla(28, 87, 60, 1); }
+.color-4-hsla { color: hsla(16, 86, 61, 1); }
+.color-5-hsla { color: hsla(5, 66, 55, 1); }
+
+/* FUENTES */
+/* 
+font-family: 'Lato', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+/* Color de Fondo */
+body{
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Lobster', cursive;
+    /* width: 100vw; */
+}
+
+header{
+    /* border: 2px solid red; */
+    background-image: url('https://cdn.pixabay.com/photo/2018/04/21/20/28/people-3339434_960_720.jpg');
+    max-width: 99vw;
+    /* width: 100vw; */
+    height: 100vh;
+    /* La imagen se va del centro hacia las esquinas */
+    background-position: center;
+    /* cover = para que toda la imagen cubra la pantalla */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.caja-header{
+    /* border: 2px solid #F29441; */
+    width: 80vw;
+    height: 90vh;
+    /* Es la manera vieja de posicionar los elementos al centro pero ahora se ocupa el display */
+    /* margin-left: 10vw; */
+}
+
+/* .navegacion{
+    border: 2px solid #34BFA6;
+} */
+
+.navegacion ul{
+    display:flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+/* Dentro de la clase navegación hay etiquetas a (enlaces) */
+.navegacion a{
+    color: #34BFA6;
+    font-size: 25px;
+    text-shadow: 2px 2px 2px #D94E41;
+    margin: 10px;
+}
+.navegacion a:hover{
+    font-size: 28px;
+    color: #F29441;
+    text-shadow: 2px 2px 2px #34BFA6;
+}
+
+.footer-header{
+    /* border: 2px solid #D94E41; */
+    color: beige;
+    text-shadow: 2px 2px 2px #F29441;
+    margin-top: 50vh;
+}
+
+.footer-header h1{
+    font-size: 50px;
+}
+
+.cintillo{
+    background-image: url('https://image.freepik.com/vector-gratis/dia-muertos-tradicional-mexicana-halloween-dia-muertos-fiesta-fiesta-decoracion-banner-invitacion_48369-14941.jpg');
+    height: 25vh;
+    background-position: center;
+}
+
+main{
+    /* border: 2px solid #34BFA6; */
+    height: 100vh;
+    /* width: 100vw; */
+}
+
+.video{
+    /* border: 2px solid salmon; */
+    width: 100%;
+    height: 100vh;
+    /* Esconde todo lo que se salga de tu borde */
+    /* Oculta lo que se salga o se desborde del borde */
+    /* Desborde oculto */
+    overflow: hidden;
+    /* Se le puso fondo negro por ponerle opacidad para el video */
+    background-color: #241E26;
+    /* La clase padre se le pone position: relative porq es todo lo que contenga de las clases hijos */
+    position: relative;
+    /* display = pantalla */
+    display: inline-block;
+    text-align: center;
+}
+
+video{
+    opacity: .5;
+}
+
+.texto{
+    color:#34BFA6;
+    /* encima de la caja padre 
+    Es todo lo como clase hijo va a contener dentro del la clase padre
+    */
+    position: absolute;
+    /* shorthands
+        se pone para situar el texto en medio del video
+     */
+     /* top: 50%;
+     left: 50%; */
+     /* Se le quito el 50 y se le puso el 40% por el 50px que se le puso de font-size */
+     top: 40%;
+     left: 40%;
+}
+
+/* especificidad */
+.texto h3{
+    color: #F29441;
+    text-shadow: 2px 2px 2px #34BFA6;
+    font-size: 50px;
+}
+
+.container-items{
+    /* border: 8px dotted plum; */
+    /* height: 100vh; */
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.item{
+    margin: 50px;
+    border: 3px solid #F29441;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #F27649;
+    overflow: hidden;
+}
+
+.item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    opacity: .5;
+    transition: all .5s;
+}
+
+.item img:hover{
+    height: 80%;
+    opacity: 1;
+}
+
+.texto-item{
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    margin: 15px;
+    text-shadow: 2px 2px 2px #F29441;
+}
+
+footer{
+    height: 100vh;
+    background-color: #0F2027;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5%;
+}
+
+.footer-item{
+     /* background-color: #D94E41; */
+    /* height: 20vh; */
+    /* width: 30%; */
+    margin: 2%;
+    color: #ffffff;
+}
+
+.footer-item img{
+    width: 300px;
+}
+
+span{
+    margin-left: 10px;
+}
+
+a{
+    color: #ffffff;
+    font-size: 20px;
+}

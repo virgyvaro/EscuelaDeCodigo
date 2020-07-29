@@ -1,0 +1,135 @@
+<!-- Declara el tipo de documento. -->
+<!DOCTYPE html>
+<!-- Establece el idioma es=español-->
+<html lang="es">
+
+<!-- Head=Cabeza del documento, contiene información de este mismo. -->
+<head>
+    <!-- Meta, se utiliza para identificar propiedades del documento: codificación, título y descripción -->
+    <!-- Codificación -->
+    <meta charset="UTF-8">
+    <!-- Descripción -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Contiene un link a una hoja de estilos externa dentro de una carpeta llamada style, por medio de un archivo .css -->
+    <link rel="stylesheet" href="style/index.css">
+    <!-- Contiene un link a un tipo de fuente quee no está instalada en nuestrro equipo -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Pacifico&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <!-- Estilo Embebido o Global, es cuando se pone una estiqueta "style" dentro de la etiqueta "head" y aquí se pondra cualquier selector(por nombre de etiqueta, por id o por clase) -->
+    <style>
+        /* body = Selector por nombre de etiqueta */
+        body {
+            /* Propiedad para poner una imagen de fondo */
+            background-image: url("https://cdn.pixabay.com/photo/2016/10/15/02/19/purple-1741713_960_720.jpg");
+            /* Propiedad para que la imagen cubra todo el tamaño de la página web. */
+            background-size: cover;
+        }
+
+        /* Selector por clase, cuando lleva un puntito "." antes del nombre */
+        .titulo {
+            /* Propiedad que indica el estilo de la fuente */
+            font-family: 'Merienda One', cursive;
+            /* Propiedad del color de la fuente(letra) */
+            color: darkviolet;
+            /* Propiedad para visualizar sombra en el texto */
+            text-shadow: 2px 5px Aquamarine;
+        }
+    </style>
+    <!-- Es el título que aparecerá en la pestaña de la web, título de la web.-->
+    <title>Turi Dance</title>
+</head>
+
+<!-- Body=Cuerpo=Contiene todo lo que podremos ver en nuestro navegador. -->
+<body>
+    <!-- Header=Al encabezado de nuestra página web -->
+    <header>
+        <!-- H1= Demarca que es el título principal de la página y sólo debe de haber un "h1" en toda la página -->
+        <!-- Esta etiqueta contiene estilo en línea (big) y un selector por id -->
+        <h1 class="titulo" id="indice"> <big>TURI DANCE</big> </h1>
+    </header>
+
+    <!-- div = Sirve para crear secciones o agrupar contenido. -->
+    <!-- Esta etiqueta contiene un selector por clase haciendo referencia por medio de un .css -->
+    <div class="container">
+
+        <div class="caja-flex">
+            <!-- p = Etiqueta para escribir párrafos, es una etiquetal líneal (quee abarca todo el ancho de la página)  -->
+            <p>
+                <!-- a = Etiqueta llamada ancla con un atributo href, donde se utiliza para enlazar todo tipo de recursos (url, nombre, id) -->
+                <!-- Hace referencia al contenido dentro de la misma página. -->
+                <a href="#somos">¿Quiénes Somos?</a>
+            </p>
+        </div>
+
+        <div class="caja-flex">
+            <p>
+                <!-- Referencia a una página externa de html -->
+                <a href="clases.html">Clases</a>
+            </p>
+        </div>
+
+        <div class="caja-flex">
+            <p>
+                <a href="galeria.html">Galeria</a>
+            </p>
+        </div>
+
+        <div class="caja-flex">
+            <p>
+                <a href="contacto.html">Contacto</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- br = Etiqueta simple de formato (no tiene etiqueta de cierre), line break salto de línea o de renglón.   -->
+    <br>
+
+    <!-- Propiedad de imagen, es una etiqueta sin pareja y siempre debe de contener un src y alt -->
+        <!-- source = fuente url o path(archivo desde la pc) -->
+        <!--  imágenes locales y externas  -->
+            <!-- alt = alternative  -->
+            <!-- 1) generar una opción para la gente invidente y saber de lo que se trata la imagen por si esta es borrada del servidor o equipo personal -->
+            <!-- 2) da una alternativa  a la imágen -->
+    <!-- Imagen path(localizada en la carpeta del proyecto) -->
+    <img src="img/gente-bailando.jpg" alt="chicas bailando">
+
+    <p class="slogan">Bailar es la expresión vertical de un deseo horizontal.</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h3 id="somos">¿Quiénes Somos?</h3>
+    <p><a href="#indice">Regresar al inicio</a></p>
+
+    <br>
+
+    <div class="parrafo">
+        <p>
+            Turi Dance es un estudio de baile, donde podrás disfrutar del arte de bailar, aprendiendo de los mejores
+            Maestros y con un selecto grupo de personas que desean seguir mejorando su estilo de vida dentro de un gran
+            ambiente. Contamos con clases de nivel Básico, Principiante, Intermedio y Avanzado.
+        </p>
+        <br>
+        <p>
+            Nuestro objetivo es promover la salud así como el bienestar físico y mental de los alumnos por medio de la
+            danza y otras actividades.
+        </p>
+        <br>
+        <p>Turi Dance está de acuerdo en que cada persona es única y debe regalarse el tiempo para disfrutar de un
+            momento de liberación de estrés, fomentando su paz y armonía interior.
+        </p>
+        <br>
+        <p>
+            Aquí estamos para ti, para agregar alegría a tu vida y para ayudarte a lograr tu equilibrio físico y mental
+            al mismo tiempo que disfrutas de la convivencia con los miembros de nuestro estudio de baile.
+        </p>
+    </div>
+
+    <br>
+
+</body>
+
+</html>

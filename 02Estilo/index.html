@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style</title>
+
+    <!-- Aquí empieza nuestro etiqueta "Style" donde va a contener todos nuestros selectores y este será una etiqueta-->
+    <style>
+        /* Este es nuestro selector por elemento o por nombre de etiqueta */
+        strong {
+            background: blueviolet;
+            color:chartreuse;
+        }
+        /* Este es nuestro selector de clase en cual debe empezar con un punto seguido del nombre de la clase */
+        .alumnos{
+            background: red;
+            font-size: 80px;
+            color: white;
+        }
+        /* Este es nuestro selector ID donde debe empezar con un # después seguido del nombre  */
+        #dulce{
+            background:pink;
+            color:purple;
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Estilo</h1>
+    <h2><i>Estilo en línea</i></h2>
+    <!-- Estilo en línea -->
+    <p style="background: rgb(148, 64, 226); color: cyan;">Esto es una etiqueta con estilo</p> 
+
+
+
+    <hr>
+
+
+    <h3><i>Estilo Global o Embebido</i> </h3>
+    <!-- Estilo global o embebido -->
+    <strong>Esta es una etiqueta con estilo global o embebido </strong>
+    <!-- En html se ocupa la palabra reservada class para mandar a llamar la clase alumnos, que se creó en el "style" dentro de "head"-->
+    <strong class="alumnos">Etiqueta uno</strong>
+    <!-- En html se ocupa la palabra reservada id para llamar al selector de ID, donde en nuestro "style" se llama #dulce y ya no se pone el #   -->
+    <strong id="dulce">Etiqueta dos</strong>
+    <strong>Etiqueta tres</strong>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+body{
+    background-color: grey;
+}
+
+#dulce{
+    border: 5px double violet;
+    color: blue;
+    text-align: center;
+}
+
+#cafe{
+    text-align: justify;
+    font-family: georgia;
+    color: yellow;
+}
+
+.dog{
+    background-color: burlywood;
+    color: slateblue;
+    text-align: right;
+}
+
+.fish{
+    border: 15px solid red;
+    color: wheat;
+    text-align: left;
+}

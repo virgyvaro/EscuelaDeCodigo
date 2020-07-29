@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/contacto.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Pacifico&family=Shadows+Into+Light&family=Fondamento&display=swap"
+        rel="stylesheet">
+    <title>Contacto</title>
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="img/logo.jpg" alt="logo">
+        <h1>Contacto</h1>
+    </header>
+
+    <br>
+    <nav>
+        <ul class="menu">
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="index.html">Historia</a>
+            </li>
+            <li>
+                <a href="festividades.html">Festividades</a>
+            </li>
+            <div class="menu">
+                <li>
+                    <img class="redes" src="https://cdn.pixabay.com/photo/2016/11/18/11/16/social-1834013_960_720.png"
+                        alt="Twitter">
+                </li>
+                <li>
+                    <img class="redes" src="https://cdn.pixabay.com/photo/2016/11/18/11/16/social-1834010_960_720.png"
+                        alt="Instagram">
+                </li>
+                <li>
+                    <img class="redes" src="https://cdn.pixabay.com/photo/2016/11/18/11/16/social-1834007_960_720.png"
+                        alt="Facebook">
+                </li>
+            </div>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <div class="box">
+                <div class="datos">
+                    <form action="">
+                        <img src="img/people.png" alt="personita">
+                        <label for="nombre"> <strong>Nombre: </strong> </label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre y primer apellido"
+                            required />
+                        
+                        <br>
+    
+                        <img src="img/edad.png" alt="edad">
+                        <label for="edad"> <strong>Edad: </strong></label>
+                        <input type="number" name="edad" id="edad" placeholder="Ingresa tu edad" required min="13" max="80">
+    
+                        <br>
+    
+                        <img src="img/email.png" alt="Email">
+                        <label for="email"> <strong>Email: </strong> </label>
+                        <input type="email" name="email" id="email" required placeholder="Ingresa tu email">
+    
+                        <br>
+    
+                        <img src="img/notas.png" alt="Comentarios">
+                        <label for="notas"> <strong>Comentarios: </strong></label>
+                        <input type="text" name="notas" id="notas" placeholder="Escribe algún comentario y/o sugerencia que desees" required
+                            minlength="5" maxlength="180">
+    
+                        <br>
+                        <br>
+                        <p>
+                            <img src="img/genero.png" alt="Genero">
+                            <strong>Género: </strong>
+                            <span >
+                                <input type="radio" name="genero" id="f" value="f">
+                                <label for="femenino" style="color: MediumVioletRed;">Femenino</label>
+                                <input type="radio" name="genero" id="m" value="m">
+                                <label for="masculino" style="color: MediumVioletRed;">Masculino</label>
+                                <input type="radio" name="genero" id="o" value="otro">
+                                <label for="otro" style="color: MediumVioletRed;">Otro</label>
+                            </span>
+                        </p>
+                    
+                        <p>
+                            <img src="img/info1.png" alt="Información Usuario">
+                            <strong>¿La información fue de tu interés?: </strong> </p>
+    
+                        <select name="nivel" id="level">
+                            <option value="">Selecciona ...</option>
+                            <option value="1">Sí</option>
+                            <option value="2">No</option>
+                        </select>
+    
+                        <button> Enviar </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p style="text-align: center;">
+            La guía perfecta para conocer la Guelaguetza.
+            <br>
+            <spam style="font-family: monospace;">Todos los derechos reservados.</spam>
+        </p>
+    </footer>
+
+</body>
+
+</html>

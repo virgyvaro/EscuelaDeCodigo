@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/galeria.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Pacifico&family=Shadows+Into+Light&family=Fondamento&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-image: url("https://cdn.pixabay.com/photo/2016/10/15/02/19/purple-1741713_960_720.jpg");
+            background-size: cover;
+        }
+
+        .titulo {
+            font-size: x-large;
+            color: yellow;
+            text-shadow: 2px 5px SaddleBrown;
+            font-family: "Merienda One";
+            text-align: center;
+        }
+    </style>
+    <title>Galeria</title>
+</head>
+<body>
+    <h1 class="titulo"> <big>Galeria</big></h1>
+
+    <div class="container">
+
+        <div class="caja-flex">
+            <p>
+                <a href="index.html">Inicio</a>
+            </p>
+        </div>
+
+        <div class="caja-flex">
+            <p>
+                <a href="index.html#somos">¿Quiénes Somos?</a>
+            </p>
+        </div>
+
+        <div class="caja-flex">
+            <p>
+                <a href="clases.html">Clases</a>
+            </p>
+        </div>
+
+        <div class="caja-flex">
+            <p>
+                <a href="contacto.html">Contacto</a>
+            </p>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Video Interno = Es una etiqueta par y
+    scr = source = fuente(de donde lo vamos a tomar)-->
+    <!-- controls = para manipular el video, con play, stp y demás -->
+    <!-- En esta etiqueta se puede poner el estilo en línea -->
+    <video src="video/Bachata.mp4" controls></video>
+    <p class="name">Bachata</p>
+
+    <div class="flex">
+        <div>
+            <img class="img1" src="img/Clase.jpg" alt="Clase">
+            <p class="name">Clase Grupal</p>
+        </div>
+        <div>
+            <img class="img2" src="img/Zumba.jpg" alt="Zumba">
+            <p class="name">Zumba</p>
+        </div>
+        
+
+    </div>
+
+    <br>
+    <br>
+
+</body>
+</html>

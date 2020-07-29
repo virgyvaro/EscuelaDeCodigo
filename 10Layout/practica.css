@@ -1,0 +1,198 @@
+body{
+    background-color: darkgrey;
+}
+
+header{
+    /* limpiar */
+    /* border: 2px solid cyan; */
+    width: 100%;
+    /* limpiar */
+    /* height: 10vh; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+img{
+    width: 100px;
+}
+
+
+h1{
+    color: white;
+    text-shadow: 3px 3px 3px black; 
+    letter-spacing: 10px;
+    border-bottom: 2px dotted white;
+}
+
+nav{
+    /* limpiar */
+    /* border: 2px solid purple; */
+    width: 100%;
+    /* limpiar */
+    /* height: 10vh; */
+}
+
+.menu{
+    display:flex;
+    justify-content: space-evenly;
+    list-style: none;
+    color: blueviolet;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+a{
+    /* Esta propiedad es para quitar la linea de abajo de cada palabra */
+    text-decoration: none;
+    /* Por si se quiere dar estilo a la raya */
+    border-bottom: 2px dotted white;
+    color: blueviolet;
+}
+
+a:hover{
+    color: blue;
+    border-bottom: 2px dashed pink;
+    font-size: 30px;
+    text-shadow: 3px 3px 3px yellow; 
+
+}
+
+main{
+    /* limpiar */
+    /* border: 2px solid greenyellow; */
+    width: 100%;
+    /* limpiar */
+    /* height: 70vh; */
+    height: auto;
+    display: flex;
+}
+
+.div1{
+    /* border: 2px dotted red; */
+    width: 20vw;
+    background-color: #5c6772;
+}
+
+/* aside{
+    limpiar 
+    border: 2px solid salmon;
+    me ayudo a dibujar la caja de primer momento
+    width: 40%;
+    limpiar
+    height: 75vh;
+}   */
+
+.caja{
+    width: 60%;
+    border-top-right-radius: 20px;
+    border-bottom: 2px dashed white;
+    background-color: DarkOrchid;
+    /* height: 5vh; */
+    border-left: 5px solid magenta;
+}
+
+h2{
+    margin-left: 20px;
+    color: beige; 
+}
+
+.div2{
+    /* border: 2px dotted yellow; */
+    width: 80vw;
+}
+
+h3{
+    text-align: center;
+    color: wheat;
+}
+
+section{
+    /* limpiar */
+    /* border: 2px solid plum; */
+    /* width: 60%; */
+    /* limpiar */
+    /* height: 25vh; */
+}
+
+/* Por si el video no se ve y se quita estas propiedaddes se section */
+.sec1{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.producto{
+    /* border: 2px solid red; */
+    width: 300px;
+    height: 300px;
+    /* esconde lo que se sale del margen de todo el border */
+    overflow: hidden;
+
+
+}
+
+/* Entre más se especifique será mejor */
+/* herencia */
+.producto img{
+    width: 98%;
+    height: 295px;
+    /* 0-1 */
+    /* .1,.2 */
+    /* Para que la imagen se vea opaca y al pasar el hover se hace la transicion de la propiedad de abajo y depende de los segundos que se le den para que se vea la rapidez y se vea nítida la imagen */
+    opacity: .5;
+    /* Entre más se aumente la cantidad de segundos será más lenta la transicion  */
+    /* tansicion movimiento lento */
+   /* entre más cantidad de segundos más tarda la transition  */
+    transition: all .5;
+    border-radius: 20px;
+    border: 3px dashed white;
+}
+
+.producto img:hover{
+    opacity: 1;
+    height: 255px;
+}
+
+.precio{
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 60%;
+    float: right;
+    border-top-left-radius: 20px;
+    padding: 8px;
+    border: 3px solid olive;
+}
+
+.sec2{
+    background-color: blueviolet;
+}
+
+.sec2 iframe{
+    opacity: .5;
+}
+
+.sec3 iframe{
+    width: 100%;
+}
+
+footer{
+    /* limpiar */
+    /* border: 2px solid orange; */
+    width: 100%;
+    /* limpiar */
+    /* height: 10vh; */
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white;
+}
+
+.contacto{
+    width: 30%;
+    /* border: 2px solid yellow; */
+}
+
+
+
+
+

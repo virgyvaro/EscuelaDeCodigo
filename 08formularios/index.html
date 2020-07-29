@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Indice</title>
+</head>
+
+<body>
+    <h1 class="titulo">Formularios</h1>
+    <div class=box>
+        <!-- el accion es que acción va a realizar el formulario -->
+        <div class="datos">
+            <form action="">
+                <!-- Label es una etiqueta par de texto -->
+                <label for="nombre">NOMBRE:</label>
+                <!--  input = entrada y es una etiqueta simple  -->
+                <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required />
+                <!-- El placeholder es un marcador que nos indica y nos da in formación de lo requerido -->
+                <!-- "Required" sirve para evaluar el campo o la entrada, es para decirle al usuario que debe completar el campo y solo viene en el "html5"-->
+                <br>
+                <label for="edad">Edad:</label>
+                <input type="number" name="edad" id="edad" placeholder="Ingresa tu edad" required min="1" max="150">
+                <br>
+                <!-- min y max length a partir de la versión "html5" y es para acortar y/o alragar los caracteres de la contraseña -->
+                <label for="contra">Contraseña:</label>
+                <input type="password" name="contra" id="contra" placeholder="Ingresa tu contraseña" required
+                    minlength="5" maxlength="10">
+                <br>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required placeholder="ingresa tu email">
+                <br>
+
+                <!-- Parte 2 -->
+
+                <!-- Radio button, para selecionar solo una opción de las que nos den -->
+                <!-- el for de label y el name de input deben de coincidir -->
+
+                <!-- Ejemplo de sintaxis pues no se ve bien visualmente -->
+                <!-- <label for="genero">Género</label>
+                    <input type="radio" name="genero" id="f">Femenino
+                    <input type="radio" name="genero" id="m">Masculino -->
+
+                <!-- Radio buttons sirven para elegir solo una opción -->
+                <p>Género:</p>
+
+                <!-- El valor del value permite indicar saber que valor obtiene del usuario y este valor va para la base de datos -->
+                <!-- Para el button radio siempre debe de ir el input y luego label -->
+                <input type="radio" name="genero" id="f" value="f">
+                <!-- disabled checked 
+                        Se ocupa para cuando en las encuentas son definidas para un solo sexo, ya se encuentra selecciona la opción y desabilitada
+                        disable=desactivado
+                        checked=seleccionada la opción-->
+                <label for="femenino">Femenino</label>
+                <input type="radio" name="genero" id="m" value="m">
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="genero" id="o" value="otro">
+                <label for="otro">Otro</label>
+
+                <!-- Checkbox -->
+                <!-- Con esto podemos elegir más de uno -->
+                <!-- diasable se usa para todos los input -->
+                <!-- El checked solo es para el checkbox -->
+
+                <p>Me gusta: </p>
+                <input type="checkbox" name="paloma" id="gusto1" value="">
+                <label for="agua">Agua</label>
+                <br>
+                <input type="checkbox" name="paloma" id="gusto2">
+                <label for="cafe">Café</label>
+                <br>
+                <input type="checkbox" name="paloma" id="gusto3">
+                <label for="te">Té</label>
+                <br>
+                <input type="checkbox" name="paloma" id="gusto4" checked>
+                <label for="chocolate">Chocolate</label>
+
+                <!-- Listas desplegables -->
+                <!--SELECT es una etiqueta par -->
+                <p>Selecciona un lenguaje que domines: </p>
+                <select name="lenguajes" id="lang">
+                    <!-- Esto sirve para que en el primer registro no se vea las opciones, sino se vea que diga: "Seleccione..."
+                                <option value="">selecciona ...</option> -->
+                    <option value="1">HTML</option>
+                     <!-- selected = Es para decir que aparezca ese primer dato en nuestra lista. -->
+                    <option value="2" selected>CSS</option>
+                    <option value="3">JAVASCRIPT</option>
+                </select>
+
+                <p>Ingresa tu edad: </p>
+                <select name="edad" id="edad">
+                    <option value="1">10</option>
+                    <option value="2">11</option>
+                    <option value="3">12</option>
+                    <option value="4">13</option>
+                    <option value="5">14</option>
+                    <option value="6">15</option>
+                </select>
+
+                <!-- Un formulario siempre debe de terminar con un "button" -->
+                <button> Enviar </button>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

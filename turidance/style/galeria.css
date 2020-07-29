@@ -1,0 +1,47 @@
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.caja-flex a{
+    text-align: center;
+    color: indigo;
+    font-family: "Pacifico";
+    font-size: large;    
+}
+
+a:hover{
+    color: blue;
+    font-size: 25px;
+}
+
+video{
+    height: "50%";
+    border-radius: 30px;
+    margin-left: 30%;
+    width: "25%";
+}
+
+.name{
+    text-align: center;
+    color: yellow;
+    font-family: "Merienda One";
+}
+
+.img1{
+    width: 30vw;
+    height: 50vh;
+    border-radius: 15px;
+}
+
+.img2{
+    width: 27vw;
+    height: 50vh;
+    border-radius: 15px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+}

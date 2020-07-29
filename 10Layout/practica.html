@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="practica.css">
+    <title>Práctica de Layout</title>
+</head>
+
+<body>
+    <!-- header+nav+(main>(div.div1>aside)+(div.div2>(section)*3))+footer -->
+
+    <!-- Es el de Carlos -->
+    <!-- header+nav+(main>(div.div1>aside)+(div.div2>(section)*3))+footer -->
+
+    <!-- Encabezado -->
+    <header id="inicio">
+        <img src="https://i.pinimg.com/originals/11/e2/c7/11e2c7ec8619e2f52bf999fca46a8d74.jpg" alt="logo">
+        <h1>Your Name Boutique</h1>
+
+    </header>
+
+    <!-- Navegación -->
+    <nav>
+        <ul class="menu">
+            <li>
+                <a href="#inicio">Inicio</a>
+            </li>
+            <li>
+                <a href="#nosotros">Nosotros</a>
+            </li>
+            <li>
+                <a href="#categorias">Catergorias</a>
+            </li>
+            <li>
+                <a href="#sucursales">Sucursales</a>
+            </li>
+            <li>
+                <a href="#contacto">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Principal sección más importante -->
+    <main>
+        <!-- barra lateral -->
+        <div class="div1">
+            <aside>
+                <div class="caja">
+                    <h2>Blusas</h2>
+                </div>
+                <div class="caja">
+                    <h2>Vestidos</h2>
+                </div>
+                <div class="caja">
+                    <h2>Faldas</h2>
+                </div>
+                <div class="caja">
+                    <h2>Pantalones</h2>
+                </div>
+                <div class="caja">
+                    <h2>Lencería</h2>
+                </div>
+                <div class="caja">
+                    <h2>Bisutería</h2>
+                </div>
+                <div class="caja">
+                    <h2>Tallas</h2>
+                </div>
+            </aside>
+        </div>
+
+        <div class="div2">
+            <h3>Blusas</h3>
+            <section class="sec1">
+                <div class="producto">
+                    <img src="https://cdn.pixabay.com/photo/2016/08/01/18/47/stylish-1561753_960_720.jpg"
+                        alt="Blusa blanca">
+                    <div class="precio">
+                        $190
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="https://cdn.pixabay.com/photo/2019/06/02/17/01/portrait-4246879_960_720.jpg"
+                        alt="Lenceria negra">
+                    <div class="precio">
+                        $250
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="https://cdn.pixabay.com/photo/2015/07/28/09/18/dress-864107_960_720.jpg" alt="Vestido">
+                    <div class="precio">
+                        $300
+                    </div>
+                </div>
+            </section>
+
+            <!-- Empieza el código del video y es la segunda sección -->
+            <h3>Nosotros</h3>
+            <section class="sec2" id="nosotros">
+                <!-- utilizamoa atajos -->
+                <!-- muted=1&loop=1&autoplay=1 -->
+                <!-- van despues de source -->
+                <!-- 0 apagado 1 prendido -->
+                <div style="padding: 56.25% 0 0 0; position: relative;">
+                    <iframe
+                        src="https://player.vimeo.com/video/40899371?autoplay=1&title=0&byline=0&portrait=0&muted=1&loop=1&autoplay=1"
+                        style="
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+            </section>
+
+            <!-- Código para el mapa de google -->
+            <h3>Sucursales</h3>
+            <section class="sec3" id="sucursales">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.47214812846!2d-99.14338868540646!3d19.435199986882832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f92b75aa014d%3A0x17d810d20da6e8cf!2sPalacio%20de%20Bellas%20Artes!5e0!3m2!1ses-419!2smx!4v1595361492836!5m2!1ses-419!2smx"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </section>
+        </div>
+    </main>
+
+    <footer id="contacto">
+        <div class="contacto">
+            <img
+        src="https://i.pinimg.com/originals/11/e2/c7/11e2c7ec8619e2f52bf999fca46a8d74.jpg"
+        alt="logo"
+      />
+      <a href="#inicio">Inicio</a>
+        </div>
+        <div class="contacto">
+            <h4>Teléfonos</h4>
+            <ul>
+                <li>555-66-77-888-</li>
+                <li>555-66-77-888-</li>
+            </ul>
+        </div>
+        <div class="contacto">
+            <p>redes sociales</p>
+            <ul>
+                <li>instagram</li>
+                <li>facebock</li>
+            </ul>
+        </div>      
+    </footer>
+
+</body>
+
+</html>

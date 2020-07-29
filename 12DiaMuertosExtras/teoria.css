@@ -1,0 +1,30 @@
+/* RGB = Se ocupa para imágenes digitales, para el desarrollo web y tiene 3 vectores para formar un color, trabaja por bits */
+/* CMYK = Para impresión, textil, papeles, pinturas de casa y es cantidad de tinta por goteo */
+
+.body{
+    /* nombre de color */
+    background-color: red;
+    /* RGB = Red Green Blue tiene una base en bits, es la unidad más pequeña de una computadora */
+    /* 1 bit es un conjunto de 8 números binarios (0 y 1) */
+    /* Se trabaja de 0 al 255, 0 nada de rojo y 255 toodo rojo y así con los demás colores */
+    background-color: rgb(red, green, blue);
+    /* RGBA = Es para generar colores translucidos del 0 al 1 es el rango de valores que puede tomar */
+    /* Red Green Blue Alpha */
+    background-color: rgba(red, green, blue, alpha);
+    /* Hexadecimal va a tener 16 bits va del 0 al 15, del 0 al F para que sean 15 */
+    /* 0 al 9 y de la A a la F */
+    /* Se deberían de poner 6 posiciones */
+    /* También se puede poner así: */
+    /* background-color: #000; */
+    background-color: #000000;
+    background-color: #ffffff;
+
+    /* hsl = tonalidad, cromatico, luminosidad */
+    /* h = hue = matiz = color en que color lo quiero, va del 0 al 255 */
+    /* s = saturation = satutación combinado de negro a blanco, trabaja en %, de 0% a 100%*/
+    /* l = lightness = luminosidad = opacidad va de transparente a color solido, trabaja en %, 0% a 100% */
+    background-color: hsl(hue, saturation, lightness);
+    background-color: hsl(255,50%, 50%);
+    /* hsla = Lo mismo que el hsl pero se le agrega el vector "alpha" */
+    background-color: hsla(255, 50%, 50%, .5);
+}

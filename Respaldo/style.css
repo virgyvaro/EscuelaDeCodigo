@@ -1,0 +1,138 @@
+body{
+    background-color: darkorchid;
+}
+
+/*Código de Carlos
+body{
+    background-color: coral;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+    }*/
+
+.titulo{
+    text-align: center;
+    color: cyan;
+    font-size: x-large;
+    border: 5px dotted fuchsia;
+    border-radius: 5px;
+    width: 50%;
+    height: 50%;
+    padding: 5px;
+    margin-left: 25%;
+    margin-right: 25%;
+    
+}
+
+.caja{
+    border: 5px dotted yellow;
+    text-align: center;
+    float: left;
+    height: 400px;
+    margin-left: 2.5%;
+    width: 30%;
+
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+} 
+
+
+/* 1) float  */
+/*
+.caja{
+*/
+    /* border: 2px solid cyan; */
+
+    /*
+    
+    width: 30%;
+    /* flota a la izquierda del utlimo elemento */
+    /*
+    float: left;
+    height: 400px;
+    margin-left: 2.5%;
+}
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+} 
+*/
+
+/* Para haceer cajas con flex */
+
+/* Con la propiedad clear se limpiará todo lo anterior que pusimos de las cajas float y el both es decir que borre todo de raíz*/
+hr{
+    clear: both;
+}
+
+/* Es la clase más importante para el contenedor */
+.container{
+    border: 5px solid purple;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+/* La clase box será para darle estilo a las cajas fijas que están dentro del contenedor */
+.box{
+    border: 2px dotted cyan;
+    width: 20%;
+    padding: 10px;
+    text-align:center;
+    font-weight: bold;
+}
+
+/* Clases para hacer las cajas con flex de la página "Retrospec"  */
+
+.barra{
+    /* border: 2px solid blue; */
+    background-color: lightpink;
+    /* Unidad de medida relativa h=altura v=viewport = es el total de alto y de ancho de una pantalla sin importar en que dispositivo se vea */
+    /* height: 10vh; */
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.vinetas{
+    /* border: 2px solid magenta; */
+    list-style: none;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-evenly;
+    /* width: 30px; */
+    height: 5vh;
+    margin: 10px;
+    width: 40%;
+}
+
+.logo{
+    /* border: 2px solid red; */
+    text-align: center;
+    height: 5vh;
+    margin: 10px;
+    width: 20%;
+}
+
+.logo img{
+    width: 100px;
+    height: 50px;
+
+}
+
+.icons{
+    /* border: 2px dotted yellow; */
+    display: flex;
+    justify-content: space-evenly;
+    height: 5vh;
+    margin: 10px;
+    width: 20%;
+}
+
+ .icons p{
+    margin-left: 15px;
+} 

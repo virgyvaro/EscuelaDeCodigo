@@ -1,0 +1,61 @@
+body{
+    background-color: lightseagreen;
+}
+.titulo{
+    background-color: blue;
+    color: yellow;
+    border: 2px dashed magenta;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.box{
+    width: 98.5vw;
+    height: 80vh;
+    display: flex;
+    /* Ejes cruzados */
+    /* 1 */ justify-content: center; 
+    /* 2 */ align-items: center;
+    border: 2px solid yellow;
+}
+
+.datos{
+    background-color: mediumorchid;
+    width: 50vw;
+    height: auto;
+    border-radius: 15px;
+    padding: 10px;
+    /* text-align: center; */
+}
+
+button{
+    width: 50px;
+    height: 50px;
+    color: cyan;
+    border-color: tomato;
+    border-radius: 50%;
+    border: solid blue;
+    margin: 15px;
+    float: right;
+}
+
+button:hover{
+    width: 60px;
+    height: 60px;
+}
+
+/* subclases */
+input[type="text"], input[type="number"], input[type="password"], input[type="email"] {
+    background: none;
+    /* background-color: transparent; */
+    /* linea de fuera */
+    outline: none;
+    border: none;
+    border-bottom: 2px solid yellow;
+    width: 50%;
+    float:right;
+}
+
+input[type="checkbox"]{
+    width: 10px;
+}

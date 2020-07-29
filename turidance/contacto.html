@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/contacto.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Pacifico&family=Shadows+Into+Light&family=Fondamento&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-image: url("https://cdn.pixabay.com/photo/2016/10/15/02/19/purple-1741713_960_720.jpg");
+            background-size: cover;
+        }
+
+        .titulo {
+            font-size: x-large;
+            color: yellow;
+            text-shadow: 2px 5px SaddleBrown;
+            font-family: "Merienda One";
+            text-align: center;
+        }
+    </style>
+    <title>Contacto</title>
+</head>
+
+<body>
+
+    <h1 class="titulo"><big>Contacto</big></h1>
+    <br>
+
+    <div class="container">
+
+        <div class="caja-flex">
+            <p>
+                <a href="index.html">Inicio</a>
+            </p>
+        </div>
+
+        <div class="caja-flex">
+            <p>
+                <a href="index.html#somos">¿Quiénes Somos?</a>
+            </p>
+        </div>
+
+        <div class="caja-flex">
+            <p>
+                <a href="clases.html">Clases</a>
+            </p>
+        </div>
+
+        <div class="caja-flex">
+            <p>
+                <a href="galeria.html">Galeria</a>
+            </p>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <p style="text-align: center; color: Seashell; font-size: larger;">No dudes en ponerte en contacto con nosotros
+        para mayor información de costos y horarios que te interesen.</p>
+
+    <br>
+
+    <div class="box">
+        <div class="datos">
+            <!-- Es la acción que va a realizar el formulario. -->
+            <!-- En cada formulario siempre debe de ir un "label" y un "input" -->
+            <form action="">
+                <img src="img/people.png" alt="personita">
+                <!-- Label = Es una etiqueta par de texto -->
+                <label for="nombre"> <strong>Nombre: </strong>  </label>
+                <!--  input = Etiqueta de entrada y simple (no tiene etiqueta de cierre). -->
+                <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre y primer apellido" required />
+                <!-- El placeholder es un marcador que nos indica y nos da información de lo requerido, esto visto en pantalla web. -->
+                <!-- "Required" sirve para evaluar el campo o la entrada, es para decirle al usuario que debe completar el campo y solo viene en el "html5"-->
+                <!-- type = Es el tipo de texto que se va a introducir. -->
+                <!-- name = Deberá de ser el mismo nombre que se le puso al "for" de la etiqueta "label". -->
+                <!-- id = sera el identificador del campo y más adelante nos servirá para la BD. -->
+
+                <br>
+
+                <img src="img/edad.png" alt="edad">
+                <label for="edad"> <strong>Edad: </strong></label>
+                <input type="number" name="edad" id="edad" placeholder="Ingresa tu edad" required min="13" max="80">
+
+                <br>
+
+                <img src="img/clave.png" alt="Contraseña">
+                <label for="contra"> <strong>Contraseña: </strong></label>
+                <!-- min y max length a partir de la versión "html5" y es para acortar y/o alargar los caracteres de la contraseña -->
+                <input type="password" name="contra" id="contra" placeholder="Ingresa tu contraseña" required
+                    minlength="5" maxlength="10">
+
+                <br>
+
+                <img src="img/email.png" alt="Email">
+                <label for="email"> <strong>Email: </strong> </label>
+                <input type="email" name="email" id="email" required placeholder="Ingresa tu email">
+
+                <br>
+                <br>
+
+                <!-- Radio Buttons = Sirve para elegir solo una opción de las que nos dan. -->
+                <p> 
+                    <img src="img/genero.png" alt="Genero">
+                    <strong>Género: </strong>
+                </p>
+
+                <!-- Para el button radio siempre debe de ir el input y luego label -->
+                <!-- value = Nos permite sabeer cual es el valor devuelto por el usuario y este valor será reflejado en la BD. -->
+                <input type="radio" name="genero" id="f" value="f">
+                <label for="femenino" style="color: gold;" >Femenino</label>
+                <input type="radio" name="genero" id="m" value="m">
+                <label for="masculino" style="color: gold;">Masculino</label>
+                <input type="radio" name="genero" id="o" value="otro">
+                <label for="otro" style="color: gold;">Otro</label>
+
+                <br>
+                <br>
+
+                <!-- Listas Desplegables = Para seleccionar alguna opción de la lista quee se proporciona.-->
+                <p> 
+                    <img src="img/music.png" alt="Nota musical">
+                    <strong>¿Cuentas con algún nivel de preparación?: </strong> </p>
+
+                <!--SELECT es una etiqueta par -->
+                <select name="nivel" id="level">
+                    <!-- Esta primer línea, sirve para que el primer registro diga: "Seleccione..." y no se vean las opciones de la lista. -->
+                    <option value="">Selecciona ...</option>
+                    <option value="1">Principiante</option>
+                    <option value="2">Intermedio</option>
+                    <option value="3">Avanzado</option>
+                </select>
+
+                <br>
+        
+                <!-- Un formulario siempre debe de terminar con un "button" -->
+                <button> Enviar </button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

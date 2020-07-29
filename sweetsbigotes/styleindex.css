@@ -1,0 +1,46 @@
+body{
+    background-image: url("https://image.freepik.com/vector-gratis/fondo-circular-lettering-viva-mexico_23-2147709678.jpg");
+}
+
+.sombras{
+    color: red;
+    text-align: center;
+    text-shadow: 2px 2px 2px yellow;
+    font-family: fantasy;
+}
+
+
+.sombralineacion{
+    margin-left: 10px;
+}
+
+img{
+    border: 10px solid fuchsia;
+}
+
+.p1{
+    text-align: center;
+    font-family: monospace;
+    color: blue;
+    border: 7px dotted blue;
+    padding: 5px;
+    border-radius: 30px;
+    background: cyan;
+    width: 300px;
+    margin-top: 250px;
+    margin-left: 155px;
+    font-size: large;
+}
+
+.p2{
+ 
+    margin-left: 780px;
+    /* margin-bottom: 1px; */
+    margin-top: 1px;
+}
+
+a:hover{
+    color:hotpink;
+    font-size: 30px;
+}
+

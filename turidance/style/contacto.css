@@ -1,0 +1,84 @@
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.caja-flex a{
+    text-align: center;
+    color: indigo;
+    font-family: "Pacifico";
+    font-size: large;    
+}
+
+a:hover{
+    color: blue;
+    font-size: 25px;
+}
+
+.box{
+    /* vw = Medida de ancho en pantalla para que se vea en cuaalquier dispositivo móvil. */
+    width: 97.5vw;
+    /* vh = Medida de largo en pantalla para que se vea en cuaalquier dispositivo móvil. */
+    height: 80vh;
+    display: flex;
+    /* Ejes cruzados */
+    /* 1 */ justify-content: center; 
+    /* Propiedad para alinear elementos */
+    /* 2 */ align-items: center;
+}
+
+.datos{
+    width: 50vw;
+    height: auto;
+    border-radius: 15px;
+    padding: 25px;
+    font-family: "Fondamento";
+    color: indigo;
+    text-shadow: 1px 1px magenta;
+}
+
+/* Subclases donde tendran el mismo estilo no importando el tipo de dato que sean los inputs. */
+input[type="text"], input[type="number"], input[type="password"], input[type="email"] {
+    
+    border: 2px dotted mediumblue;
+    background: none;
+    width: 50%;
+    float: right;
+    text-align: center;
+    padding: 2px;
+}
+
+/* Propiedad para cambiar el color al placeholder. */
+::-webkit-input-placeholder {
+    color: cyan;
+    font-family: sans-serif;
+    text-align: justify;
+}
+
+input[type="checkbox"]{
+    width: 10vw;
+    padding: 2px;
+}
+
+button{
+    width: 60px;
+    height: 60px;
+    color: indigo;
+    border-radius: 35%;
+    border: 5px solid blue;
+    margin: 15px;
+    float: right;
+}
+
+/* Clase para resaltar el butón una vez que se pase encima el mouse */
+button:hover{
+    width: 70px;
+    height: 70px;
+    color: magenta;
+}
+
+img{
+    width: 2vw;
+    height: 3vh;
+}
